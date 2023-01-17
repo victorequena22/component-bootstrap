@@ -1,3 +1,4 @@
+/// <reference types="react" />
 interface Props {
     error?: any;
     col: number;

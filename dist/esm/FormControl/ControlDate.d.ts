@@ -1,4 +1,5 @@
-import { Props as padre } from "../Inputs/InputDate";
+/// <reference types="react" />
+import { Props as padre } from '../Inputs/InputDate';
 interface Props extends padre {
     after?: string;
     before?: string;

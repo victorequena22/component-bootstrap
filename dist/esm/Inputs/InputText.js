@@ -1,6 +1,6 @@
 import { __assign } from "tslib";
-import React, { useState } from "react";
-import { FormControl } from "react-bootstrap";
+import React, { useState } from 'react';
+import { FormControl } from 'react-bootstrap';
 export default function InputText(p) {
     var _a = useState(false), select = _a[0], setSelect = _a[1];
     var value = function () {
@@ -77,7 +77,11 @@ export default function InputText(p) {
             return '';
         }
     };
-    return React.createElement(FormControl, __assign({}, Props(), { as: 'input', onFocus: function () { setSelect(true); }, onBlur: function () { setSelect(false); }, onKeyUp: function (e) {
+    return (React.createElement(FormControl, __assign({}, Props(), { as: 'input', onFocus: function () {
+            setSelect(true);
+        }, onBlur: function () {
+            setSelect(false);
+        }, onKeyUp: function (e) {
             if (e.keyCode === 13)
                 if (p.next)
                     p.next();
@@ -99,6 +103,6 @@ export default function InputText(p) {
                 p.setData((_a = {}, _a[p.update] = value, _a));
             else
                 p.setData(value);
-        } }));
+        } })));
 }
 //# sourceMappingURL=InputText.js.map

@@ -1,6 +1,6 @@
 import { __assign } from "tslib";
-import React, { useState } from "react";
-import { FormControl } from "react-bootstrap";
+import React, { useState } from 'react';
+import { FormControl } from 'react-bootstrap';
 export default function InputDate(p) {
     var _a = useState(false), select = _a[0], setSelect = _a[1];
     var value = function () {
@@ -16,7 +16,11 @@ export default function InputDate(p) {
         props.type = 'date';
         return __assign(__assign({}, props), value());
     };
-    return React.createElement(FormControl, __assign({}, Props(), { onFocus: function () { setSelect(true); }, onBlur: function () { setSelect(false); }, onKeyUp: function (e) {
+    return (React.createElement(FormControl, __assign({}, Props(), { onFocus: function () {
+            setSelect(true);
+        }, onBlur: function () {
+            setSelect(false);
+        }, onKeyUp: function (e) {
             if (e.keyCode === 13)
                 if (p.next)
                     p.next();
@@ -27,6 +31,6 @@ export default function InputDate(p) {
                 p.setData((_a = {}, _a[p.update] = value, _a));
             else
                 p.setData(value);
-        } }));
+        } })));
 }
 //# sourceMappingURL=InputDate.js.map

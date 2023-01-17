@@ -1,5 +1,5 @@
-import { CSSProperties } from "react";
-import { Props as padre } from "../Inputs/InputNumber";
+import { CSSProperties } from 'react';
+import { Props as padre } from '../Inputs/InputNumber';
 interface Props extends padre {
     after?: string;
     before?: string;

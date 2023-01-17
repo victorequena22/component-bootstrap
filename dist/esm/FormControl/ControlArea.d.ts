@@ -1,4 +1,5 @@
-import { Props as padre } from "../Inputs/InputArea";
+/// <reference types="react" />
+import { Props as padre } from '../Inputs/InputArea';
 interface Props extends padre {
     after?: string;
     before?: string;

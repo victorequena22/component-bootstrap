@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { ButtonProps } from 'react-bootstrap';
 import { ButtonVariant } from 'react-bootstrap/esm/types';
 interface Props extends ButtonProps {

@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import { CSSProperties } from 'react';
 interface colorProps {
     setData: (d: string) => void;
     invert?: boolean;
@@ -12,5 +12,5 @@ interface colorProps {
     colores?: string[];
     click?: () => void;
 }
-export declare function ButtonColor({ tip, click, invert, style, className, setData, color: c, children, disable, disableAlpha, colores }: colorProps): JSX.Element;
+export declare function ButtonColor({ tip, click, invert, style, className, setData, color: c, children, disable, disableAlpha, colores, }: colorProps): JSX.Element;
 export {};

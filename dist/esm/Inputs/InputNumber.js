@@ -1,7 +1,7 @@
 import { __assign } from "tslib";
-import React, { useState } from "react";
-import { FormControl } from "react-bootstrap";
-import { numberFormat } from "utiles";
+import React, { useState } from 'react';
+import { FormControl } from 'react-bootstrap';
+import { numberFormat } from 'utiles';
 export default function InputNumber(p) {
     var _a = useState(false), select = _a[0], setSelect = _a[1];
     var value = function () {
@@ -17,10 +17,14 @@ export default function InputNumber(p) {
         props.style = undefined;
         return __assign(__assign(__assign({}, props), value()), { style: style });
     };
-    return React.createElement(FormControl, __assign({}, Props(), { onFocus: function () { setSelect(true); }, onBlur: function () { setSelect(false); }, onChange: function (e) {
+    return (React.createElement(FormControl, __assign({}, Props(), { onFocus: function () {
+            setSelect(true);
+        }, onBlur: function () {
+            setSelect(false);
+        }, onChange: function (e) {
             var _a;
             var value = e.currentTarget.value;
-            var r = (value !== '') ? parseFloat(value) : 0;
+            var r = value !== '' ? parseFloat(value) : 0;
             if (p.min)
                 if (p.min > r)
                     r = p.min;
@@ -31,6 +35,6 @@ export default function InputNumber(p) {
                 p.setData((_a = {}, _a[p.update] = r, _a));
             else
                 p.setData(r);
-        } }));
+        } })));
 }
 //# sourceMappingURL=InputNumber.js.map
