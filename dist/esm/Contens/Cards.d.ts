@@ -23,8 +23,10 @@ export declare function RowConfig({ className, children, top, style, }: {
     children: any;
     top?: number;
 }): JSX.Element;
-export declare function CardMain({ children, width, className }: {
+interface CardMainProps {
     children: any;
     className?: string;
     width?: string;
-}): JSX.Element;
+}
+export declare function CardMain({ children, width, className }: CardMainProps): JSX.Element;
+export {};

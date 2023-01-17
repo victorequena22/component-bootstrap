@@ -1,5 +1,4 @@
-
-import * as React from 'react'
+import React from 'react'
 import { render } from '@testing-library/react'
 import 'jest-canvas-mock'
 import { ControlArea, ControlDate, ControlNumber, ControlText } from './index'

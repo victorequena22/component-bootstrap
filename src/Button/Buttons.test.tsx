@@ -1,5 +1,4 @@
-/* eslint-disable prettier/prettier */
-import * as React from 'react'
+import React from 'react'
 import { render } from '@testing-library/react'
 import 'jest-canvas-mock'
 import { ButtonConfig, ButtonColor, ButtonChance } from './index'
@@ -21,7 +20,7 @@ describe('Prueba de renderizado Botones', () => {
         setData={(c) => {
           console.log(c)
         }}
-        color='$555555'
+        color='#555555'
       >
         color
       </ButtonColor>,

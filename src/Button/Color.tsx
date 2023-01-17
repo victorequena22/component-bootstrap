@@ -39,12 +39,12 @@ function getCSS(rgb: number[], invert: boolean): string {
   const backH = colorRGB(rgb, [-20, -20, -20])
   const textH = textRGB(rgb.map((c: number) => 255 - c))
   return css`
-    background-color: ${invert ? text : back};
-    color: ${invert ? back : text};
-    border-color: ${invert ? back : text};
+    background-color: ${invert ? text : back}
+    color: ${invert ? back : text}
+    border-color: ${invert ? back : text}
     &:hover {
-      background-color: ${invert ? textH : backH};
-      color: ${invert ? backH : textH};
+      background-color: ${invert ? textH : backH}
+      color: ${invert ? backH : textH}
     }
   `
 }

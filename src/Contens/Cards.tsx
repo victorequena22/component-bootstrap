@@ -81,14 +81,20 @@ export function RowConfig({
     </Row>
   )
 }
-export function CardMain({ children, width, className }: { children: any; className?: string; width?: string }) {
+interface CardMainProps {
+  children: any
+  className?: string
+  width?: string
+
+}
+export function CardMain({ children, width, className }: CardMainProps) {
   return (
     <Card className={className} style={{ width, backgroundColor: '#ccc', padding: '7px 7px 7px 7px' }}>
       <Row style={{ margin: '0 0 0 0', padding: '0 0 0 0' }}>
         <TP
           key={`tooltip${Math.random()}`}
           className={css`
-            z-index: 99999999;
+            z-index: 99999999
           `}
           place='bottom'
         />

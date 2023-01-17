@@ -31,7 +31,7 @@ export function CardMain(_a) {
     var children = _a.children, width = _a.width, className = _a.className;
     return (React.createElement(Card, { className: className, style: { width: width, backgroundColor: '#ccc', padding: '7px 7px 7px 7px' } },
         React.createElement(Row, { style: { margin: '0 0 0 0', padding: '0 0 0 0' } },
-            React.createElement(TP, { key: "tooltip".concat(Math.random()), className: css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n            z-index: 99999999;\n          "], ["\n            z-index: 99999999;\n          "]))), place: 'bottom' }),
+            React.createElement(TP, { key: "tooltip".concat(Math.random()), className: css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n            z-index: 99999999\n          "], ["\n            z-index: 99999999\n          "]))), place: 'bottom' }),
             children)));
 }
 var templateObject_1;

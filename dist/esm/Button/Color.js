@@ -32,7 +32,7 @@ function getCSS(rgb, invert) {
     var text = textRGB(rgb);
     var backH = colorRGB(rgb, [-20, -20, -20]);
     var textH = textRGB(rgb.map(function (c) { return 255 - c; }));
-    return css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    background-color: ", ";\n    color: ", ";\n    border-color: ", ";\n    &:hover {\n      background-color: ", ";\n      color: ", ";\n    }\n  "], ["\n    background-color: ", ";\n    color: ", ";\n    border-color: ", ";\n    &:hover {\n      background-color: ", ";\n      color: ", ";\n    }\n  "])), invert ? text : back, invert ? back : text, invert ? back : text, invert ? textH : backH, invert ? backH : textH);
+    return css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    background-color: ", "\n    color: ", "\n    border-color: ", "\n    &:hover {\n      background-color: ", "\n      color: ", "\n    }\n  "], ["\n    background-color: ", "\n    color: ", "\n    border-color: ", "\n    &:hover {\n      background-color: ", "\n      color: ", "\n    }\n  "])), invert ? text : back, invert ? back : text, invert ? back : text, invert ? textH : backH, invert ? backH : textH);
 }
 export function ButtonColor(_a) {
     var tip = _a.tip, click = _a.click, _b = _a.invert, invert = _b === void 0 ? false : _b, style = _a.style, className = _a.className, setData = _a.setData, c = _a.color, children = _a.children, _c = _a.disable, disable = _c === void 0 ? false : _c, _d = _a.disableAlpha, disableAlpha = _d === void 0 ? false : _d, _e = _a.colores, colores = _e === void 0 ? [] : _e;

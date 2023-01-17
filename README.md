@@ -13,7 +13,7 @@ npm add typescript-components-by-rupert
 Import the Counter component:
 
 ```js
-import { Counter } from "typescript-components-by-rupert";
+import { Counter } from "typescript-components-by-rupert"
 ```
 
 You can then render the `Counter` component like any other React component in JSX.
