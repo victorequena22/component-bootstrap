@@ -16,7 +16,7 @@ export default function InputArea(p: Props) {
         if (select) return { defaultValue: p.value };
         else return { value: p.value }
     }, Props = () => {
-        let props: any = { ...p };
+        const props: any = { ...p };
         props.value = undefined;
         return { ...props, ...value() };
     }

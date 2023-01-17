@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "tsc && cp package.json README.md ./dist"
+    "build": "yarn clean && tsc && cp package.json README.md ./dist"
   },
   "repository": {
     "type": "git",
@@ -34,11 +34,13 @@
     "material-ui-color": "^1.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
-    "react-router-dom": "^5.2.0",
     "react-dom": "^17.0.2",
-    "typescript": "^4.3.5",
+    "react-router-dom": "^5.2.0",
     "react-tooltip": "^4.2.19",
+    "typescript": "^4.3.5",
     "utiles": "https://github.com/victorequena22/utiles.git"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tslib": "^2.4.1"
+  }
 }

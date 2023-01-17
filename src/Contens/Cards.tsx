@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react'
+import React, { CSSProperties } from 'react'
 import { Card, Row } from 'react-bootstrap';
 import ReactTooltip from 'react-tooltip';
 import { css } from '@emotion/css';
