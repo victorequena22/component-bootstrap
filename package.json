@@ -58,7 +58,6 @@
     "material-ui-color": "^1.2.0",
     "react-bootstrap": "^1.6.0",
     "react-router-dom": "^5.2.0",
-    "react-tooltip": "^4.2.19",
     "utiles": "https://github.com/victorequena22/utiles.git"
   }
 }

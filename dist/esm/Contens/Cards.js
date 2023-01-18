@@ -1,9 +1,6 @@
-import { __assign, __makeTemplateObject } from "tslib";
+import { __assign } from "tslib";
 import React from 'react';
 import { Card, Row } from 'react-bootstrap';
-import ReactTooltip from 'react-tooltip';
-import { css } from '@emotion/css';
-var TP = ReactTooltip;
 export function TitleCard(_a) {
     var children = _a.children;
     return (React.createElement(Row, { className: 'd-flex justify-content-center mt-1', style: {
@@ -30,9 +27,6 @@ export function RowConfig(_a) {
 export function CardMain(_a) {
     var children = _a.children, width = _a.width, className = _a.className;
     return (React.createElement(Card, { className: className, style: { width: width, backgroundColor: '#ccc', padding: '7px 7px 7px 7px' } },
-        React.createElement(Row, { style: { margin: '0 0 0 0', padding: '0 0 0 0' } },
-            React.createElement(TP, { key: "tooltip".concat(Math.random()), className: css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n            z-index: 99999999\n          "], ["\n            z-index: 99999999\n          "]))), place: 'bottom' }),
-            children)));
+        React.createElement(Row, { style: { margin: '0 0 0 0', padding: '0 0 0 0' } }, children)));
 }
-var templateObject_1;
 //# sourceMappingURL=Cards.js.map
