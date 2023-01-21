@@ -9,5 +9,7 @@ export interface Props extends padre {
     lower?: boolean;
     next?: () => void;
 }
-export default function InputArea(p: Props): JSX.Element;
+export default function InputArea(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

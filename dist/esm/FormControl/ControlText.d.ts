@@ -8,5 +8,7 @@ interface Props extends padre {
     ancho?: string;
     classGroup?: string;
 }
-export default function ControlText(p: Props): JSX.Element;
+export default function ControlText(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

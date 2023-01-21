@@ -6,5 +6,7 @@ interface Props extends padre {
     error?: any;
     classGroup?: string;
 }
-export default function ControlArea(p: Props): JSX.Element;
+export default function ControlArea(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

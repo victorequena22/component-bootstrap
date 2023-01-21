@@ -8,13 +8,13 @@ export interface Props extends padre {
   next?: () => void
 }
 
-export default function InputDate(p: Props) {
+export default function InputDate(p: Props & { size?: 'sm' | 'lg' }) {
   const [select, setSelect] = useState(false)
   const value = () => {
-      if (select) return { defaultValue: p.value }
-      else if (p.value !== '') return { value: p.value }
-      else return { value: 'dd/mm/aaaa' }
-    },
+    if (select) return { defaultValue: p.value }
+    else if (p.value !== '') return { value: p.value }
+    else return { value: 'dd/mm/aaaa' }
+  },
     Props = () => {
       const props: any = { ...p }
       props.value = undefined

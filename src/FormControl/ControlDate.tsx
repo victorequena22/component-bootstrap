@@ -7,7 +7,7 @@ interface Props extends padre {
   error?: any
   classGroup?: string
 }
-export default function ControlDate(p: Props) {
+export default function ControlDate(p: Props& { size?: 'sm' | 'lg' }) {
   const Props: () => any = () => {
     return { ...p }
   }

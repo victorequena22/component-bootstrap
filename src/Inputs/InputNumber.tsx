@@ -12,12 +12,12 @@ export interface Props extends padre {
   next?: () => void
 }
 
-export default function InputNumber(p: Props) {
+export default function InputNumber(p: Props & { size?: 'sm' | 'lg' }) {
   const [select, setSelect] = useState(false)
   const value = () => {
-      if (select) return { defaultValue: p.value, type: 'number' }
-      else return { value: numberFormat(p.value, p.decimal) }
-    },
+    if (select) return { defaultValue: p.value, type: 'number' }
+    else return { value: numberFormat(p.value, p.decimal) }
+  },
     Props = () => {
       const props: any = { ...p }
       let { style } = p

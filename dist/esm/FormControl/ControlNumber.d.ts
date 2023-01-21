@@ -7,5 +7,7 @@ interface Props extends padre {
     classGroup?: string;
     styleGroup?: CSSProperties;
 }
-export default function ControlNumber(p: Props): JSX.Element;
+export default function ControlNumber(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

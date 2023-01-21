@@ -7,5 +7,7 @@ export interface Props extends padre {
     update?: string;
     next?: () => void;
 }
-export default function InputDate(p: Props): JSX.Element;
+export default function InputDate(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

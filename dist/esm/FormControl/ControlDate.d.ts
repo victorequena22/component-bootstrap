@@ -6,5 +6,7 @@ interface Props extends padre {
     error?: any;
     classGroup?: string;
 }
-export default function ControlDate(p: Props): JSX.Element;
+export default function ControlDate(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

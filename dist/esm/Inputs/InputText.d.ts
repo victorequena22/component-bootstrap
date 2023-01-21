@@ -12,5 +12,7 @@ export interface Props extends padre {
     only?: 'letter' | 'alphanumeric' | 'number';
     next?: () => void;
 }
-export default function InputText(p: Props): JSX.Element;
+export default function InputText(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};

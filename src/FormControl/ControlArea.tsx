@@ -7,7 +7,7 @@ interface Props extends padre {
   error?: any
   classGroup?: string
 }
-export default function ControlArea(p: Props) {
+export default function ControlArea(p: Props& { size?: 'sm' | 'lg' }) {
   const Props: () => any = () => {
     return { ...p }
   }

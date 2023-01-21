@@ -9,7 +9,7 @@ interface Props extends padre {
   ancho?: string
   classGroup?: string
 }
-export default function ControlText(p: Props) {
+export default function ControlText(p: Props & { size?: 'sm' | 'lg' }) {
   const Props: () => any = () => {
     return { ...p }
   }

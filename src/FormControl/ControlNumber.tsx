@@ -8,7 +8,7 @@ interface Props extends padre {
   classGroup?: string
   styleGroup?: CSSProperties
 }
-export default function ControlNumber(p: Props) {
+export default function ControlNumber(p: Props& { size?: 'sm' | 'lg' }) {
   const Props: () => any = () => {
     return { ...p }
   }

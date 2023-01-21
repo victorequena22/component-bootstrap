@@ -10,5 +10,7 @@ export interface Props extends padre {
     decimal?: number;
     next?: () => void;
 }
-export default function InputNumber(p: Props): JSX.Element;
+export default function InputNumber(p: Props & {
+    size?: 'sm' | 'lg';
+}): JSX.Element;
 export {};
