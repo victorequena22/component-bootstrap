@@ -2,7 +2,7 @@ import React, { CSSProperties, useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap'
 import { css } from '@emotion/css'
 import { ColorBox, Color, createColor } from 'material-ui-color'
-import Popover from '@material-ui/core/Popover'
+import Popover from '@mui/material/Popover'
 import { RowConfig } from '../Contens'
 interface colorProps {
   setData: (d: string) => void

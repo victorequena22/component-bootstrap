@@ -31,16 +31,18 @@
   "author": "Victor Requena",
   "license": "ISC",
   "devDependencies": {
-    "utiles": "https://github.com/victorequena22/utiles.git",
-    "@types/react": "^18.0.12",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "eslint": "^8.17.0",
-    "react": "^18.1.0",
-    "typescript": "^4.7.3",
     "@emotion/css": "^11.7.1",
-    "@material-ui/core": "^4.12.3",
+    "@types/react": "^18.0.12",
     "@types/react-bootstrap": "^0.32.25",
+    "eslint": "^8.17.0",
     "material-ui-color": "^1.2.0",
-    "react-bootstrap": "^1.6.0"
+    "react": "^18.1.0",
+    "react-bootstrap": "^1.6.0",
+    "typescript": "^4.7.3",
+    "utiles": "https://github.com/victorequena22/utiles.git"
+  },
+  "dependencies": {
+    "@mui/material": "^5.11.5",
+    "tslib": "^2.4.1"
   }
 }
