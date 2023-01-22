@@ -1,7 +1,7 @@
 import { __assign } from "tslib";
 import React, { useState } from 'react';
 import { FormControl } from 'react-bootstrap';
-import { numberFormat } from 'utiles';
+import { numberFormat } from '@victorequena22/utiles';
 export default function InputNumber(p) {
     var _a = useState(false), select = _a[0], setSelect = _a[1];
     var value = function () {

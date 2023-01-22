@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FormControl, FormControlProps } from 'react-bootstrap'
-import { numberFormat } from 'utiles'
+import { numberFormat } from '@victorequena22/utiles'
 type padre = FormControlProps & React.HTMLProps<HTMLInputElement>
 export interface Props extends padre {
   setData: (data: any) => void

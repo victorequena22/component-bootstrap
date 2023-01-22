@@ -364,6 +364,11 @@
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
   integrity sha512-t/Tvs5qR47OLOr+4E9ckN8AmP2Tf16gWq+/qA4iUGS/OOyHVO8wv2vjJuX8SNOUTJyWb+2t7wJm6cXILFnOROA==
 
+"@victorequena22/utiles@1.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@victorequena22/utiles/-/utiles-1.0.2.tgz#b8e35f5bd2518ac8c8c057b95f9e04801ec4e865"
+  integrity sha512-yM8mw7b9xXvsIP95ZfZjWXs4IlMPx7SYg0I6afMsTLvOPglpM1zWDddNrFFySH1Xsc2sbOUkSYXMEx7S/8wnUA==
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -1269,10 +1274,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-"utiles@https://github.com/victorequena22/utiles.git":
-  version "1.0.2"
-  resolved "https://github.com/victorequena22/utiles.git#8a31cb8bddd62181a1d9b726a6d19dbae0952277"
 
 warning@^4.0.0, warning@^4.0.3:
   version "4.0.3"
