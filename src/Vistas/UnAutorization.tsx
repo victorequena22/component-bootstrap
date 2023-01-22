@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import '../../App/Login/Login.css'
+import './Login.css'
 export default function UnAutorization() {
     return <Card  style={{ height: 'calc(100vh - 200px)' }}>
         <Card.Header className='bg-danger d-flex'>
