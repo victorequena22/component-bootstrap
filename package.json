@@ -32,17 +32,16 @@
   "license": "ISC",
   "devDependencies": {
     "@emotion/css": "^11.7.1",
+    "@mui/material": "^5.11.5",
     "@types/react": "^18.0.12",
     "@types/react-bootstrap": "^0.32.25",
     "eslint": "^8.17.0",
-    "material-ui-color": "^1.2.0",
     "react": "^18.1.0",
     "react-bootstrap": "^1.6.0",
+    "tslib": "^2.4.1",
     "typescript": "^4.7.3",
+    "mui-color": "^2.0.0-beta.2",
     "utiles": "https://github.com/victorequena22/utiles.git"
   },
-  "dependencies": {
-    "@mui/material": "^5.11.5",
-    "tslib": "^2.4.1"
-  }
+  "dependencies": {}
 }

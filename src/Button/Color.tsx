@@ -1,7 +1,7 @@
 import React, { CSSProperties, useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap'
 import { css } from '@emotion/css'
-import { ColorBox, Color, createColor } from 'material-ui-color'
+import { ColorBox, Color, createColor } from 'mui-color'
 import Popover from '@mui/material/Popover'
 import { RowConfig } from '../Contens'
 interface colorProps {

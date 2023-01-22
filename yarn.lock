@@ -922,11 +922,6 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-material-ui-color@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/material-ui-color/-/material-ui-color-1.2.0.tgz#3dde809e9f5f4a29499add83640aeadaaec36f6c"
-  integrity sha512-bD2Rww+hakJxD2/19uxc280Vh292DnRStLke2LDFavVtGd5fzOz09zIrHO3ZHlMkJFsvwx6IwiB4/932ftv0sQ==
-
 minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -938,6 +933,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+mui-color@^2.0.0-beta.2:
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/mui-color/-/mui-color-2.0.0-beta.2.tgz#0a3ea2aa436b3be6a24a8743eb451e662a986944"
+  integrity sha512-M6wM2t6lOKlQ8eVrF1wu4QSNq/V4jMhuD5wR9+imK8qr9fn953puXjCJNlvTXnU4N+ygxXwQZpunW4pQwWDLug==
 
 natural-compare@^1.4.0:
   version "1.4.0"

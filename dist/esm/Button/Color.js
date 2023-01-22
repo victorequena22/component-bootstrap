@@ -2,7 +2,7 @@ import { __assign, __makeTemplateObject } from "tslib";
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { css } from '@emotion/css';
-import { ColorBox, createColor } from 'material-ui-color';
+import { ColorBox, createColor } from 'mui-color';
 import Popover from '@mui/material/Popover';
 import { RowConfig } from '../Contens';
 function colorRGB(_a, _b) {
