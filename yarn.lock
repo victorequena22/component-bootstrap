@@ -365,9 +365,9 @@
   integrity sha512-t/Tvs5qR47OLOr+4E9ckN8AmP2Tf16gWq+/qA4iUGS/OOyHVO8wv2vjJuX8SNOUTJyWb+2t7wJm6cXILFnOROA==
 
 "@victorequena22/utiles@1.0.0":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@victorequena22/utiles/-/utiles-1.0.2.tgz#b8e35f5bd2518ac8c8c057b95f9e04801ec4e865"
-  integrity sha512-yM8mw7b9xXvsIP95ZfZjWXs4IlMPx7SYg0I6afMsTLvOPglpM1zWDddNrFFySH1Xsc2sbOUkSYXMEx7S/8wnUA==
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/@victorequena22/utiles/-/utiles-1.0.23.tgz#e6f2901bc720e9c2529703bc454097e4f13526de"
+  integrity sha512-WLeYw+FPNI1XZHBkVzSgR4bbs597xy49sSNDGpmxl6UK/J27Necu3l30+bK6xX2uuQd59gbasTQNVGcYnlm6+g==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
