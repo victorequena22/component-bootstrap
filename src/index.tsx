@@ -2,6 +2,7 @@ import { ButtonConfig, ButtonColor, ButtonChance } from './Button'
 import { TitleCard, BoxConfig, CardConfig, RowConfig, CardMain, ColFeed, ColFeedSelector } from './Contens'
 import Control, { ControlArea, ControlDate, ControlNumber, ControlText } from './FormControl'
 import Input, { InputArea, InputDate, InputNumber, InputText } from './Inputs'
+import { ModalAccion, ModalPDF, ModalMain } from './Modals'
 import Cargando from './Vistas/Cargando'
 import UnAutorization from './Vistas/UnAutorization'
 export {
@@ -27,4 +28,7 @@ export {
   InputDate,
   InputNumber,
   InputText,
+  ModalAccion,
+  ModalPDF,
+  ModalMain,
 }
