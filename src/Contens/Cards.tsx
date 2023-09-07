@@ -15,81 +15,46 @@ export function TitleCard({ children }: { children: any }) {
     </Row>
   )
 }
-export function BoxConfig({
-  children,
-  width,
-  margin,
-  className,
-  style,
-  tip,
-}: {
-  tip?: string
-  style?: CSSProperties
-  className?: string
-  children: any
+interface Base {
   width?: string | number
+  style?: CSSProperties
+  className?: string
+  children: any
+}
+interface BoxConfigProps extends Base {
+  tip?: SVGStringList
   margin?: string
-}) {
-  return (
-    <div data-tip={tip} className={className} style={{ margin, padding: '0 0 0 0', width, ...style }}>
-      {children}
-    </div>
-  )
 }
-export function CardConfig({
-  className,
-  children,
-  width,
-  marginNull,
-  style,
-}: {
-  className?: string
-  children: any
-  width: string
+export function BoxConfig({ children, width, margin, className, style, tip }: BoxConfigProps) {
+  return <div data-tip={tip} className={className}
+    style={{ margin, padding: '0 0 0 0', width, ...style }}>
+    {children}
+  </div>
+}
+interface CardConfigProps extends Base {
   marginNull?: boolean
-  style?: CSSProperties
-}) {
-  return (
-    <Card
-      className={className}
-      style={{ backgroundColor: '#eee', margin: marginNull ? '5px 0 0 0' : '0 0 0 5px', width, ...style }}
-    >
-      <Card.Body style={{ margin: '0 0 0 0', padding: '3px 3px 3px 3px' }}>{children}</Card.Body>
-    </Card>
-  )
 }
-export function RowConfig({
-  className,
-  children,
-  top,
-  style,
-}: {
-  style?: CSSProperties
-  className?: string
-  children: any
+export function CardConfig({ className, children, width, marginNull, style }: CardConfigProps) {
+  const margin = marginNull ? '5px 0 0 0' : '0 0 0 5px'
+  return <Card className={className} style={{ backgroundColor: '#eee', margin, width, ...style }}>
+    <Card.Body style={{ margin: '0 0 0 0', padding: '3px 3px 3px 3px' }}>{children}</Card.Body>
+  </Card>
+}
+interface RowConfigProps extends Base {
   top?: number
-}) {
-  return (
-    <Row
-      className={(className ? className : '') + (top ? ' mt-' + top : '')}
-      style={{ margin: '0 0 0 0', padding: '0 0 0 0', ...style }}
-    >
+}
+export function RowConfig({ className, children, top, style }: RowConfigProps) {
+  return <Row style={{ margin: '0 0 0 0', padding: '0 0 0 0', ...style }}
+    className={(className ? className : '') + (top ? ' mt-' + top : '')}>
+    {children}
+  </Row>
+}
+export function CardMain({ children, width, className, style }: Base) {
+  const s = { width, backgroundColor: '#ccc', padding: '7px 7px 7px 7px', ...style };
+  return <Card className={className} style={s}>
+    <Row style={{ margin: '0 0 0 0', padding: '0 0 0 0' }}>
       {children}
     </Row>
-  )
-}
-interface CardMainProps {
-  children: any
-  className?: string
-  width?: string
+  </Card>
 
-}
-export function CardMain({ children, width, className }: CardMainProps) {
-  return (
-    <Card className={className} style={{ width, backgroundColor: '#ccc', padding: '7px 7px 7px 7px' }}>
-      <Row style={{ margin: '0 0 0 0', padding: '0 0 0 0' }}>
-        {children}
-      </Row>
-    </Card>
-  )
 }

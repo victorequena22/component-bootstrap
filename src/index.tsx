@@ -5,6 +5,7 @@ import Input, { InputArea, InputDate, InputNumber, InputText } from './Inputs'
 import { ModalAccion, ModalPDF, ModalMain } from './Modals'
 import Cargando from './Vistas/Cargando'
 import UnAutorization from './Vistas/UnAutorization'
+import { CircleSlider } from './circle-slider'
 export {
   Cargando,
   UnAutorization,
@@ -31,4 +32,5 @@ export {
   ModalAccion,
   ModalPDF,
   ModalMain,
+  CircleSlider
 }
