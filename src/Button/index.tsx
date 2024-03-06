@@ -1,4 +1,4 @@
 import { ButtonConfig } from './Config'
-import { ButtonColor } from './Color'
+import { ButtonColor } from './Colores'
 import { ButtonChance } from './Chance'
 export { ButtonConfig, ButtonColor, ButtonChance }

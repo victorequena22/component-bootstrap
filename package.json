@@ -1,6 +1,6 @@
 {
   "name": "@victorequena22/component-bootstrap",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -35,13 +35,15 @@
     "@mui/material": "^5.11.5",
     "@types/react": "^18.0.27",
     "@types/react-bootstrap": "^0.32.32",
+    "@victorequena22/utiles": "^1.*",
     "eslint": "^8.32.0",
+    "mui-color": "^2.0.0-beta.2",
     "react": "^18.2.0",
     "react-bootstrap": "^1.6.0",
     "tslib": "^2.4.1",
-    "typescript": "^4.7.3",
-    "mui-color": "^2.0.0-beta.2",
-    "@victorequena22/utiles": "1.0.0"
+    "typescript": "^4.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-best-gradient-color-picker": "^2.2.23"
+  }
 }

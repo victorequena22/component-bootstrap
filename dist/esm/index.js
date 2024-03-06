@@ -5,5 +5,6 @@ import Input, { InputArea, InputDate, InputNumber, InputText } from './Inputs';
 import { ModalAccion, ModalPDF, ModalMain } from './Modals';
 import Cargando from './Vistas/Cargando';
 import UnAutorization from './Vistas/UnAutorization';
-export { Cargando, UnAutorization, ButtonConfig, ButtonColor, ButtonChance, Control, Input, TitleCard, BoxConfig, CardConfig, RowConfig, CardMain, ColFeed, ColFeedSelector, ControlArea, ControlDate, ControlNumber, ControlText, InputArea, InputDate, InputNumber, InputText, ModalAccion, ModalPDF, ModalMain, };
+import { CircleSlider } from './circle-slider';
+export { Cargando, UnAutorization, ButtonConfig, ButtonColor, ButtonChance, Control, Input, TitleCard, BoxConfig, CardConfig, RowConfig, CardMain, ColFeed, ColFeedSelector, ControlArea, ControlDate, ControlNumber, ControlText, InputArea, InputDate, InputNumber, InputText, ModalAccion, ModalPDF, ModalMain, CircleSlider };
 //# sourceMappingURL=index.js.map
