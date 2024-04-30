@@ -14,7 +14,7 @@ interface colorProps extends Props {
   tip?: string;
 }
 export function ButtonColor(p: colorProps) {
-  const { tip, click, invert = false, style, className, color, children, disable = false, } = p;
+  const { tip, click, invert = false, style = {}, className, color, children, disable = false, } = p;
   const [hover, setHover] = useState(false)
   const [open, setOpen] = useState<any>(null)
   const handleClick = useCallback((event: any) => { setOpen(event.currentTarget); if (click) click() }, [click])

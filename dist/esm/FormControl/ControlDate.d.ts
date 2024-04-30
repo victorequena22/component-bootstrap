@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 import { Props as padre } from '../Inputs/InputDate';
 interface Props extends padre {
     after?: string;
@@ -8,5 +8,5 @@ interface Props extends padre {
 }
 export default function ControlDate(p: Props & {
     size?: 'sm' | 'lg';
-}): JSX.Element;
+}): React.JSX.Element;
 export {};

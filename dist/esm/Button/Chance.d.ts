@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 import { ButtonProps } from 'react-bootstrap';
 import { ButtonVariant } from 'react-bootstrap/esm/types';
 interface Props extends ButtonProps {
@@ -7,5 +7,5 @@ interface Props extends ButtonProps {
     states: [ButtonVariant, ButtonVariant];
     message: [string, string];
 }
-export declare function ButtonChance(p: Props): JSX.Element;
+export declare function ButtonChance(p: Props): React.JSX.Element;
 export {};

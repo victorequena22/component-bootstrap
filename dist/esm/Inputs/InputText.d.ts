@@ -14,5 +14,5 @@ export interface Props extends padre {
 }
 export default function InputText(p: Props & {
     size?: 'sm' | 'lg';
-}): JSX.Element;
+}): React.JSX.Element;
 export {};

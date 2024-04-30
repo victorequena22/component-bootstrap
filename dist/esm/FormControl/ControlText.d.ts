@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 import { Props as padre } from '../Inputs/InputText';
 interface Props extends padre {
     after?: any;
@@ -10,5 +10,5 @@ interface Props extends padre {
 }
 export default function ControlText(p: Props & {
     size?: 'sm' | 'lg';
-}): JSX.Element;
+}): React.JSX.Element;
 export {};

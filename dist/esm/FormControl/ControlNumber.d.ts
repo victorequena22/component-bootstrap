@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react';
+import React, { CSSProperties } from 'react';
 import { Props as padre } from '../Inputs/InputNumber';
 interface Props extends padre {
     after?: string;
@@ -9,5 +9,5 @@ interface Props extends padre {
 }
 export default function ControlNumber(p: Props & {
     size?: 'sm' | 'lg';
-}): JSX.Element;
+}): React.JSX.Element;
 export {};
