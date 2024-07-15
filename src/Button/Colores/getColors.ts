@@ -19,7 +19,8 @@ export function textRGB([r, g, b]: any) {
 }
 
 export default function getColor(hex: string, hover: boolean, invert?: boolean,): CSSProperties {
-    if (hex.includes('gradient')) {
+    console.log(hex, hover, invert)
+    if (hex.includes && hex.includes('gradient')) {
         return {
             color: '#FFFFFF',
             background: hex
