@@ -18,15 +18,14 @@ export function textRGB([r, g, b]: any) {
     return colorRGB([r1, g1, b1])
 }
 
-export default function getColor(hex: string, hover: boolean, invert?: boolean,): CSSProperties {
-    console.log(hex, hover, invert)
-    if (hex.includes && hex.includes('gradient')) {
+export default function getColor(hex: string | undefined, hover: boolean, invert?: boolean,): CSSProperties {
+    if (hex && hex.includes('gradient')) {
         return {
             color: '#FFFFFF',
             background: hex
         }
     }
-    const rgb = hexToRGBA2(hex);
+    const rgb = hexToRGBA2(hex ? hex : '#000000');
     if (hover) {
         const backH = colorRGB(rgb, [-20, -20, -20])
         const textH = textRGB(rgb.map((c: number) => 255 - c))
