@@ -18,8 +18,8 @@ export default function ColorSolido({ gradiend, setData, color: c, disableAlpha 
     const present = p.filter(c => gradiend ? true : !(c.includes('gradient')))
     useEffect(() => setData(color), [color])
     return <RowConfig style={{ padding: '.5rem .5rem .5rem .5rem', background: '#eeeeee' }}>
-        <ColorPicker value={color} onChange={setColor}
+        <ColorPicker value={color} onChange={setColor} hideOpacity={disableAlpha}
             hidePresets={!present.length} presets={present} hideEyeDrop
-            hideColorTypeBtns={!gradiend} disableAlpha={disableAlpha} key={c + 'palete'} />
+            hideColorTypeBtns={!gradiend} disableDarkMode key={c + 'palete'} />
     </RowConfig>
 }
