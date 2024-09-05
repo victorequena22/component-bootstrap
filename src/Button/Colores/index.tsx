@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState, useCallback } from 'react';
+import React, { CSSProperties, useState, useCallback, useMemo } from 'react';
 import Popover from '@mui/material/Popover'
 import { Button } from 'react-bootstrap';
 import getColor from './getColors';
@@ -18,14 +18,14 @@ export function ButtonColor(p: colorProps) {
   const [hover, setHover] = useState(false)
   const [open, setOpen] = useState<any>(null)
   const handleClick = useCallback((event: any) => { setOpen(event.currentTarget); if (click) click() }, [click])
-  const handleClose = () => setOpen(null)
+  const handleClose = () => setOpen(null);
   return <>
     <Button data-tip={tip} size='sm' as='label' className={className} onClick={handleClick}
       style={{ margin: '0 0 0 0', width: 36, height: 24, ...style, ...getColor(color, hover, invert) }}
       onMouseEnter={() => setHover(true)} onMouseOut={() => setHover(false)}>{children}</Button>
-    {disable ? <></> : <Popover open={open} anchorEl={open} onClose={handleClose}
+    {useMemo(() => disable ? <></> : <Popover open={open} anchorEl={open} onClose={handleClose}
       anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}>
       <ColorSolido {...p} />
-    </Popover>}
+    </Popover>, [open])}
   </>
 }
